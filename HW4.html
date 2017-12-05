@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myFunction() {
+				var si={
+					["會計學系","財稅學系","統計學系","經濟學系"],
+					["化學工程學系","創意設計碩士學位學程","智能製造與工程管理碩士在職學位學程","機械與航空工程博士學位學程"],
+					[1,1],
+					[2,2],
+					[3,3],
+					[4,4],
+					[5,5],
+					[6,6],
+					[7,7],
+					[8,8],
+					[9,9],
+				}
+				
+				var x=document.getElementById("acc").innerHTML ;
+				document.getElementById("demo").innerHTML =x;
+			}
+		</script>
+	</head>
+	<body> 			
+		<br>請選擇學院</br>
+		<form action="myFunction()">
+			<select name="acc">
+				<option value="0">商學院</option>
+				<option value="1">工學院</option>
+				<option value="2">建設學院</option>
+				<option value="3">金融學院</option>
+				<option value="4">建設專業學院</option>
+				<option value="5">國際科技與管理學院</option>
+				<option value="6">資電學院</option>
+				<option value="7">人文社會學院</option>
+				<option value="8">理學院</option>
+				<option value="9">經營管理學院</option>
+				<option value="10">跨領域設計學院</option>
+			</select>
+
+			<br>當你選擇學院後，下列選單會列出屬於該學院的所有科系</br>
+
+			<select name="si">
+				<option value=""></option>
+			</select>
+		</form>
+	</body>
+</html>
